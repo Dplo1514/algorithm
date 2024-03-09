@@ -4,10 +4,6 @@ import java.util.*;
 
 public class programmers_game {
 
-
-
-
-
     public static void main(String[] args) {
         int[][] maps = new int[][]{{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}};
         int totalMoveCount = 0;
