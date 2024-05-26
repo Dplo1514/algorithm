@@ -23,13 +23,20 @@ public class AsyncNonBlocking {
           1. Main Thread는 future 작업이 끝날 때 까지 대기하지 않으며 콜백을 통한 결과 처리
           2. thenAccept()는 Consumer<? super T> action 자체를 파라미터로 받고 있으며 future 종료시 call back 처리
         */
-        future.thenAccept(result ->
-            // Call back
-            System.out.println("2. Result: " + result)
+        future.thenAccept(result -> {
+                // Call back
+                System.out.println("2. Result: " + result);
+                test();
+            }
         );
 
         System.out.println("3. Continue...");
         // 콜백 확인을 위한 Main Thread Sleep
         Thread.sleep(10000);
+    }
+
+    private static void test(){
+        System.out.println("test"
+        );
     }
 }

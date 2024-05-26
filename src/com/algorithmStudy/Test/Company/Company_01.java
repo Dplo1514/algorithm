@@ -1,4 +1,4 @@
-package com.algorithmStudy.Test.Company;
+package com.algorithmStudy.test.Company;
 
 public class Company_01 {
     public static int[] Q1ReverseArr(int[] arr){
