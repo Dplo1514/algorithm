@@ -1,4 +1,4 @@
-package com.algorithmStudy.Test.Company;
+package com.algorithmStudy.test.Company;
 
 import java.util.HashMap;
 import java.util.Map;
